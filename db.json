@@ -1,0 +1,144 @@
+{
+  "admins": [],
+  "users": [
+    {
+      "username": "Admin",
+      "email": "admin@gmail.com",
+      "password": "Admin123",
+      "mobileno": 9546123789,
+      "id": 1
+    },
+    {
+      "username": "Reddy",
+      "email": "reddy@gmail.com",
+      "password": "Reddy321",
+      "mobileno": 9123456789,
+      "id": 2
+    },
+    {
+      "username": "administrator",
+      "email": "admini@gmail.com",
+      "password": "admini123",
+      "mobileno": 1234567890,
+      "id": 3
+    },
+    {
+      "username": "Admin",
+      "email": "admin@gmail.com",
+      "password": "password",
+      "mobileno": 9123456789,
+      "id": 4
+    },
+    {
+      "username": "admin",
+      "email": "admin123@gmail.com",
+      "password": "password",
+      "mobileno": 1234567890,
+      "id": 5
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 6
+    },
+    {
+      "username": "anki",
+      "email": "anki@gmail.com",
+      "password": "Anki@315",
+      "mobileno": 1234567890,
+      "id": 7
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 8
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 9
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 10
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 11
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 12
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 13
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 14
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 15
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 16
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 17
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 18
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "mobileno": "",
+      "id": 19
+    }
+  ],
+  "userslist": [
+    {}
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
