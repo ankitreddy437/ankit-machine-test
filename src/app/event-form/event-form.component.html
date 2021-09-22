@@ -1,34 +1,35 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-4 offset-2">
+        <div class="col-sm-12">
             <div class="event-form">
                 <!--event form-->
-            
-                <h2>{{errormsg}}</h2>
-                <form [formGroup]="" (ngSubmit)="">
+        
+                <form [formGroup]="form" (ngSubmit)="create()">
                     <Span>Event Name :</Span>
-                    <input type="text" name="eventName" formControlName="eventName" />
+                    <input type="text" name="event_name" formControlName="event_name" />
                     <Span>Event Name :</Span>
-                    <input type="text" name="eventOrganiser" formControlName="eventOrganiser" />
-                    <Span>Event Date and Time :</Span>
-                    <mat-form-field>
-                        <input matInput [ngxMatDatePicker]="picker" placeholder="Choose a date" [(ngModel)]="myDatePicker">
-                        
-                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                        <input matInput [ngxMatTimePicker]="picker" placeholder="Choose time" [(ngModel)]="myTimePicker">
-                        <mat-timepicker-toggle matSuffix [for]="picker"></mat-timepicker-toggle>
-                    </mat-form-field>
-                    
-                    <Span>+End Time</Span>
-                    <mat-form-field>
-                        <input matInput [ngxMatTimePicker]="picker" placeholder="End time" [(ngModel)]="myTimePicker">
-                        <mat-timepicker-toggle matSuffix [for]="picker"></mat-timepicker-toggle>
-                    </mat-form-field>
-                    
-                    <!-- <ngx-mat-timepicker [(ngModel)]="myTimePicker">
-                    </ngx-mat-timepicker> -->
-                    
+                    <input type="text" name="event_organizer" formControlName="event_organizer" />
+                    <Span>Event Date and Time :</Span> 
+                       <mat-form-field>
+                           <input matInput [matDatepicker]="event_date" placeholder="Choose Date">
+                           <mat-datepicker-toggle matSuffix [for]="event_date"></mat-datepicker-toggle>
+                           <button matSuffix [matDatepickerToggle]="event_date"></button>
+                           <mat-datepicker #picker></mat-datepicker>
+                           <input matInput [matTimepicker]="startTime" placeholder="Choose Time" formControlName="From">
+                           <mat-timepicker-toggle matSuffix [for]="startTime"></mat-timepicker-toggle>
+                           <button matSuffix [matTimepickerToggle]="startTime"></button>
+                           <mat-timepicker #picker></mat-timepicker>
+                       </mat-form-field>
+                       
+                       <uib-timepicker ng-model="myTime" ng-change="changedTime()" hour-step="1" minute-step="30" show-seconds="false" show-meridian="true" show-spinners="true"></uib-timepicker>
+                        <!-- <input matInput type="datetime-local" /> -->
+                    <Span>Event Place :</Span>
+                    <input matInput [matTimepicker]="endTime" placeholder="Choose Time" formControlName="To">
+                           <mat-timepicker-toggle matSuffix [for]="endTime"></mat-timepicker-toggle>
+                           <button matSuffix [matTimepickerToggle]="endTime"></button>
+                           <mat-timepicker #picker></mat-timepicker>
+                    <input type="text" name="event_place" formControlName="event_place" />
                     <button type="submit" class="btn">Cancel</button>
                     <button type="submit" class="btn btn-primary">Create</button>
                 </form>

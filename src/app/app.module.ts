@@ -4,11 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {
-  NgxMatDatetimePickerModule,
-  NgxMatNativeDateModule,
-  NgxMatTimepickerModule
-} from '@angular-material-components/datetime-picker';
+import { MatDatetimePickerInputEvent} from '@angular-material-components/datetime-picker';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,16 +13,19 @@ import { UserService } from './user.service';
 import { RouterModule} from '@angular/router';
 import { ReactiveFormsModule,FormsModule}from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { NotfoundComponent } from './notfound/notfound.component';
+
+import { EventListComponent } from './event-list/event-list.component';
 import { EventFormComponent } from './event-form/event-form.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    EventListComponent,
+    EventFormComponent,
     NotfoundComponent,
-    EventFormComponent
   ],
   imports: [
     BrowserModule,
@@ -38,9 +37,8 @@ import { EventFormComponent } from './event-form/event-form.component';
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
-    NgxMatDatetimePickerModule,
-    NgxMatNativeDateModule,
-    NgxMatTimepickerModule
+    MatDatetimePickerInputEvent
+
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor= 'let events in eventsList' class="col-xs-1-3">
+            {{events.event_name}}
+            {{events.event_organizer}}            
+            {{events.event_duration}}            
+            {{events.event_place}}                        
+        </div>
+    </div>
+</div>
